@@ -56,6 +56,54 @@ namespace orAdminLTE.Controllers
             return View();
         }
 
+        public IActionResult UIGeneral()
+        {
+            ViewBag.CurrentMenu = "UIGeneral";
+            return View();
+        }
+
+        public IActionResult UIIcons()
+        {
+            ViewBag.CurrentMenu = "UIIcons";
+            return View();
+        }
+
+        public IActionResult UIButtons()
+        {
+            ViewBag.CurrentMenu = "UIButtons";
+            return View();
+        }
+
+        public IActionResult UISliders()
+        {
+            ViewBag.CurrentMenu = "UISliders";
+            return View();
+        }
+
+        public IActionResult UIModals()
+        {
+            ViewBag.CurrentMenu = "UIModals";
+            return View();
+        }
+
+        public IActionResult UINavbar()
+        {
+            ViewBag.CurrentMenu = "UINavbar";
+            return View();
+        }
+
+        public IActionResult UITimeline()
+        {
+            ViewBag.CurrentMenu = "UITimeline";
+            return View();
+        }
+
+        public IActionResult UIRibbons()
+        {
+            ViewBag.CurrentMenu = "UIRibbons";
+            return View();
+        }
+
         public IActionResult Starter()
         { 
             return View();

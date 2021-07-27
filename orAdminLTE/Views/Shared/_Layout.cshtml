@@ -162,6 +162,7 @@
             </ul>
         </nav>
         <!-- /.navbar -->
+
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -332,8 +333,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
+                        <li class="nav-item @((ViewBag.CurrentMenu == "UIGeneral" || ViewBag.CurrentMenu == "UIIcons" || ViewBag.CurrentMenu == "UIButtons" || ViewBag.CurrentMenu == "UISliders" || ViewBag.CurrentMenu == "UIModals" || ViewBag.CurrentMenu == "UINavbar" || ViewBag.CurrentMenu == "UITimeline" || ViewBag.CurrentMenu == "UIRibbons") ? "menu-open" : "")">
+                            <a href="#" class="nav-link @((ViewBag.CurrentMenu == "UIGeneral" || ViewBag.CurrentMenu == "UIIcons" || ViewBag.CurrentMenu == "UIButtons" || ViewBag.CurrentMenu == "UISliders" || ViewBag.CurrentMenu == "UIModals" || ViewBag.CurrentMenu == "UINavbar" || ViewBag.CurrentMenu == "UITimeline" || ViewBag.CurrentMenu == "UIRibbons") ? "active" : "")">
                                 <i class="nav-icon fas fa-tree"></i>
                                 <p>
                                     UI Elements
@@ -342,49 +343,49 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/UI/general.html" class="nav-link">
+                                    <a href="@Url.Action("UIGeneral", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UIGeneral" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>General</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/UI/icons.html" class="nav-link">
+                                    <a href="@Url.Action("UIIcons", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UIIcons" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Icons</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/UI/buttons.html" class="nav-link">
+                                    <a href="@Url.Action("UIButtons", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UIButtons" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Buttons</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/UI/sliders.html" class="nav-link">
+                                    <a href="@Url.Action("UISliders", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UISliders" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Sliders</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/UI/modals.html" class="nav-link">
+                                    <a href="@Url.Action("UIModals", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UIModals" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Modals & Alerts</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/UI/navbar.html" class="nav-link">
+                                    <a href="@Url.Action("UINavbar", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UINavbar" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Navbar & Tabs</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/UI/timeline.html" class="nav-link">
+                                    <a href="@Url.Action("UITimeline", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UITimeline" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Timeline</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/UI/ribbons.html" class="nav-link">
+                                    <a href="@Url.Action("UIRibbons", "AdminLTE")" class="nav-link @(ViewBag.CurrentMenu == "UIRibbons" ? "active" : "")">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Ribbons</p>
                                     </a>
